@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Hub</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-slate-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-5 bg-slate-800 sticky top-0">
+    <h1 class="text-2xl font-bold text-blue-400">🚀 DevOps Hub</h1>
+    <nav class="space-x-5">
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#tools" class="hover:text-blue-400">Tools</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-indigo-600">
+    <h2 class="text-5xl font-bold mb-4">Automate. Deploy. Scale.</h2>
+    <p class="mb-6 text-lg">Start your DevOps journey today</p>
+    <button onclick="showMessage()" class="bg-green-500 px-6 py-3 rounded-lg hover:bg-green-600 transition">
+      Get Started
+    </button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="p-10 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-blue-400">About DevOps</h2>
+    <p class="max-w-2xl mx-auto">
+      DevOps is a culture that combines development and operations to improve collaboration, automate workflows, and deliver software faster and reliably.
+    </p>
+  </section>
+
+  <!-- Tools -->
+  <section id="tools" class="p-10 bg-slate-800">
+    <h2 class="text-3xl font-bold text-center mb-8 text-blue-400">Popular Tools</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+      <div class="bg-slate-700 p-6 rounded-xl text-center hover:scale-105 transition">
+        🐳 Docker
+      </div>
+
+      <div class="bg-slate-700 p-6 rounded-xl text-center hover:scale-105 transition">
+        ☸ Kubernetes
+      </div>
+
+      <div class="bg-slate-700 p-6 rounded-xl text-center hover:scale-105 transition">
+        🔧 Jenkins
+      </div>
+
+      <div class="bg-slate-700 p-6 rounded-xl text-center hover:scale-105 transition">
+        📂 Git
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-10 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-blue-400">Contact</h2>
+
+    <div class="max-w-md mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-slate-800 border border-slate-600">
+      <input type="email" placeholder="Email" class="w-full p-3 rounded bg-slate-800 border border-slate-600">
+      <button class="w-full bg-green-500 p-3 rounded hover:bg-green-600 transition">Submit</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-5 bg-slate-950 text-slate-400">
+    © 2026 DevOps Hub | Made by You 💻
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function showMessage() {
+      alert("Welcome to DevOps Learning 🚀");
+    }
+  </script>
+
+</body>
+</html>
