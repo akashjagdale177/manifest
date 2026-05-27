@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name : mypod2
+
+spec:
+  selector:
+    matchLabels:
+      app: mypod2
+
+  template:
+    metadata:
+      labels:
+        app : mypod2
+
+    spec:
+      containers:
+        - name: mypod2-cont
+          image: mypod2-image
+          imagePullPolicy: Never
+          ports:
+          - containerPort: 3000
+
